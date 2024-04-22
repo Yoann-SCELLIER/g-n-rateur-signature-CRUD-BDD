@@ -60,7 +60,7 @@
                 <?php
                 // echo $user["poste1"] 
                 ?><br>
-                <?php
+                <?php 
                 // echo $user["poste2"] 
                 ?>
                 <!-- </div> -->
