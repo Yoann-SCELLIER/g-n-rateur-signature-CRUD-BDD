@@ -9,11 +9,12 @@
     ?>
             <span id="tocopy">
 
+            <!-- Formulaire avec du CSS en style -->
                 <table>
                     <tr>
                         <td style="padding: 15px; font-family: Arial;">
                             <!-- Affichage du logo -->
-                            <a href="http://www.enumiere.com" target="_blank"><img src="https://i.goopics.net/c3xabf.jpg" style="width: 150px; width: 9rem; text-decoration-line: none; text-decoration:none; background-color: white;"  alt="Logo Agence"></a>
+                            <a href="http://www.enumiere.com" target="_blank"><img src="https://i.goopics.net/c3xabf.jpg" style="width: 150px; width: 9rem; text-decoration-line: none; text-decoration:none; background-color: white;" alt="Logo Agence"></a>
                             <!-- Fin logo -->
                         </td>
                         <td style="padding: 15px; font-family: Arial;">
@@ -37,6 +38,7 @@
                     </tr>
                 </table>
 
+                <!-- Formulaire en lien avec le CSS -->
                 <!-- <table>
                     <tr>
                         <td> -->
@@ -51,29 +53,13 @@
                 <!-- </td>
                         <td> -->
                 <!-- Information utilisateur -->
-                <!-- <span class="utilisateur"><?php
-                                                // echo $user["prenom"] 
-                                                ?> <?php
-                                // echo $user["nom"] 
-                                ?></span><br> -->
+                <!-- <span class="utilisateur"><?php // echo $user["prenom"] ?> <?php // echo $user["nom"] ?></span><br> -->
                 <!-- <div class="poste"> -->
-                <?php
-                // echo $user["poste1"] 
-                ?><br>
-                <?php 
-                // echo $user["poste2"] 
-                ?>
+                <?php // echo $user["poste1"] ?><br>
+                <?php // echo $user["poste2"] ?>
                 <!-- </div> -->
                 <!-- <span class="coordonnee"> -->
-                <!-- <a href="tel:<?php
-                                    // echo $user["numero"] 
-                                    ?>"><?php
-                                    // echo $user["numero"] 
-                                    ?></a> | <a href="mailto:<?php
-                                                            // echo $user["mail"] 
-                                                            ?>"><?php
-                                    // echo $user["mail"] 
-                                    ?><span></a><br> -->
+                <!-- <a href="tel:<?php // echo $user["numero"] ?>"><?php // echo $user["numero"] ?></a> | <a href="mailto:<?php // echo $user["mail"] ?>"><?php // echo $user["mail"] ?><span></a><br> -->
                 <!-- <a href="http://www.enumiere.com" target="_blank">www.enumiere.com</a> -->
                 <!-- </span> -->
                 <!-- Fin information -->
