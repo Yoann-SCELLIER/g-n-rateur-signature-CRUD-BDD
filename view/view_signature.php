@@ -70,8 +70,8 @@
 
             <div class="">
                 <!-- Bouton pour modifier ou supprimer -->
-                <input type="button" value="Copier" class="js-copy" data-target="#tocopy">
-                <!-- <button value="Copier" class="js-copy" data-target="#tocopy">Copier</button> -->
+                <!-- <input type="button" value="Copier" class="js-copy" data-target="#tocopy"> -->
+                <button class="js-copy" data-target="#tocopy">Copier</button>
                 <a href="/generateur_signature/view/modif_signature.php?id=<?php echo $user['id'] ?>" class="buttonModifEtSupp">Modifier</a>
                 <a href="/generateur_signature/controller/delete_signature.php?id=<?php echo $user['id'] ?>" class="buttonModifEtSupp">Supprimer</a>
                 <!-- Fin bouton modifier ou supprimer -->
