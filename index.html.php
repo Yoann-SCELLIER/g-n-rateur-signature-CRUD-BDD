@@ -10,6 +10,7 @@ require_once __DIR__ . '/view/view_signature.php'; // La vue de la signature sur
 <!-- Signature refaite au plus proche de la maquette -->
 <div>
     <hr>
+    <br>
     <h1 class="utilisateur">Exemple de signature :</h1>
     <p class="poste">Ci-dessous, vous trouverez un exemple de signature que le formulaire vous proposera. <br>
         Il vous suffit de saisir vos informations pour la valider en appuyant sur le bouton "Générer".</p>

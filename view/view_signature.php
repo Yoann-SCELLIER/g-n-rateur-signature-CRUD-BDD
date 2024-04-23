@@ -76,6 +76,7 @@
                 <a href="/generateur_signature/controller/delete_signature.php?id=<?php echo $user['id'] ?>" class="buttonModifEtSupp">Supprimer</a>
                 <!-- Fin bouton modifier ou supprimer -->
             </div>
+            <br>
     <?php
         }
     }

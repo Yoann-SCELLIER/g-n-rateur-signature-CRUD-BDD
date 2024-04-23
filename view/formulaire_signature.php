@@ -43,4 +43,5 @@
     Vous aurez la possibilité de copier, modifier ou supprimer la signature à l'aide des boutons qui seront visibles sous la signature. <br>
     Une fois copiée, vous pourrez vous rendre dans les paramètres de votre boîte mail pour y coller la signature qui vous sera dédiée.</p>
 </div>
+<br>
 <hr>
