@@ -1,6 +1,6 @@
 <?php
 
-// AJOUT DE SIGNATURE
+// AJOUT DE SIGNATURE V1 --------------------------------------------------------------------------------------------------------------------
 function addUser($bdd) {
 
     // on récupère les infos saisies dans le formulaire "formulaire_signature.php".
@@ -25,7 +25,8 @@ function addUser($bdd) {
     $stmt->execute($informations);
 }
 
-// SUPPRIMER SIGNATURE
+
+// SUPPRIMER SIGNATURE V1 ---------------------------------------------------------------------------------------------------------------------
 function deleteUser($bdd) {
 
     $id = $_GET['id'];
@@ -35,7 +36,8 @@ function deleteUser($bdd) {
     $stmt->execute();
 }
 
-// MODIFICATION SIGNATURE
+
+// // MODIFICATION SIGNATURE V1 ------------------------------------------------------------------------------------------------------
 function updateUser($bdd) {
 
     // Vérifier si l'ID est défini
@@ -53,56 +55,33 @@ function updateUser($bdd) {
         // Construire la requête SQL en fonction des champs reçus
         $sql = "UPDATE `users` SET ";
         $updateFields = array();
-        if ($prenom !== null) {
-            $updateFields[] = "`prenom` = :prenom";
-        }
-        if ($nom !== null) {
-            $updateFields[] = "`nom` = :nom";
-        }
-        if ($poste1 !== null) {
-            $updateFields[] = "`poste1` = :poste1";
-        }
-        if ($poste2 !== null) {
-            $updateFields[] = "`poste2` = :poste2";
-        }
-        if ($numero !== null) {
-            $updateFields[] = "`numero` = :numero";
-        }
-        if ($mail !== null) {
-            $updateFields[] = "`mail` = :mail";
-        }
+        if ($prenom !== null) { $updateFields[] = "`prenom` = :prenom"; }
+        if ($nom !== null) { $updateFields[] = "`nom` = :nom"; }
+        if ($poste1 !== null) { $updateFields[] = "`poste1` = :poste1"; }
+        if ($poste2 !== null) { $updateFields[] = "`poste2` = :poste2"; }
+        if ($numero !== null) { $updateFields[] = "`numero` = :numero"; }
+        if ($mail !== null) { $updateFields[] = "`mail` = :mail"; }
+
         // Vérifier si au moins un champ est modifié
-        if (!empty($updateFields)) {
+        if (!empty($updateFields)) { 
             $sql .= implode(", ", $updateFields);
             $sql .= " WHERE `id` = :id";
 
             // Préparer et exécuter la requête
             $stmt = $bdd->prepare($sql);
-            if ($prenom !== null) {
-                $stmt->bindValue(':prenom', $prenom);
-            }
-            if ($nom !== null) {
-                $stmt->bindValue(':nom', $nom);
-            }
-            if ($poste1 !== null) {
-                $stmt->bindValue(':poste1', $poste1);
-            }
-            if ($poste2 !== null) {
-                $stmt->bindValue(':poste2', $poste2);
-            }
-            if ($numero !== null) {
-                $stmt->bindValue(':numero', $numero);
-            }
-            if ($mail !== null) {
-                $stmt->bindValue(':mail', $mail);
-            }
+            if ($prenom !== null) { $stmt->bindValue(':prenom', $prenom); }
+            if ($nom !== null) { $stmt->bindValue(':nom', $nom); }
+            if ($poste1 !== null) { $stmt->bindValue(':poste1', $poste1); }
+            if ($poste2 !== null) { $stmt->bindValue(':poste2', $poste2); }
+            if ($numero !== null) { $stmt->bindValue(':numero', $numero); }
+            if ($mail !== null) { $stmt->bindValue(':mail', $mail); }
 
             $stmt->bindValue(':id', $id);
             $stmt->execute();
 
             // Afficher un message de succès ou de confirmation de mise à jour
             echo "Signature mis à jour avec succès.";
-        } else {
+        } else { 
             // Afficher un message si aucun champ n'est modifié
             echo "Aucune donnée à mettre à jour.";
         }
@@ -112,7 +91,8 @@ function updateUser($bdd) {
     }
 }
 
-// VUE DE LA SIGNATURE
+
+// VUE DE LA SIGNATURE V1 ----------------------------------------------------------------------------------------------------------------------
 function viewUser($bdd) {
 
     // On récupère tout le contenu de la table users
