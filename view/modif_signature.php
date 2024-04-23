@@ -13,47 +13,47 @@ foreach ($users as $user) {
 
 ?>
 
-<!-- Formulaire pour la modification de la signature, avec en placeholder les informations déjà près défini -->
-<form class="formBorder" action="/generateur_signature/controller/update_signature.php?id=<?= $_GET['id'] ?>" method="post">
-    <div class="marg">
-        <label class="utilisateur" for="prenom">Prenom :</label>
-        <input class="" type="text" placeholder="<?php echo $user["prenom"] ?>" name="prenom" id="prenom">
-        <label class="utilisateur" for="nom">Nom :</label>
-        <input class="" size="22" type="text" placeholder="<?php echo $user["nom"] ?>" name="nom" id="nom">
-    </div>
-    <br>
-    <div class="marg">
-        <label class="utilisateur" for="poste1">Poste 1 :</label>
-        <input class="" size="57" type="text" placeholder="<?php echo $user["poste1"] ?>" name="poste1" id="poste1">
-    </div>
-    <br>
-    <div class="marg">
-        <label class="utilisateur" for="poste2">Poste 2 :</label>
-        <input class="" size="57" type="text" placeholder="<?php echo $user["poste2"] ?>" name="poste2" id="poste2">
-    </div>
-    <br>
-    <div class="marg">
-        <label class="utilisateur" for="numero">Numéro :</label>
-        <input class="" type="text" placeholder="<?php echo $user["numero"] ?>" name="numero" id="numero">
-        <label class="utilisateur" for="mail">Email :</label>
-        <input class="" type="text" placeholder="<?php echo $user["mail"] ?>" name="mail" id="mail">
-    </div>
-    <!-- Fin du formulaire des modifications -->
-    <br>
-    <div class="buttonGenerer">
-        <!-- Bouton pour enregistrer les modifications ou retourer à l'accueil -->
-        <button class="buttonGenerer" type="submit">Enregistrer les modifications</button>
-        <button class="buttonGenerer" href="/generateur_signature/index.html.php">Accueil</button>
-        <!-- Fin des Boutons enregistrer et accueil -->
-    </div>
-</form>
+        <!-- Formulaire pour la modification de la signature, avec en placeholder les informations déjà près défini -->
+        <form class="formBorder" action="/generateur_signature/controller/update_signature.php?id=<?= $_GET['id'] ?>" method="post">
+            <div class="marg">
+                <label class="utilisateur" for="prenom">Prenom :</label>
+                <input class="" type="text" placeholder="<?php echo $user["prenom"] ?>" name="prenom" id="prenom">
+                <label class="utilisateur" for="nom">Nom :</label>
+                <input class="" size="22" type="text" placeholder="<?php echo $user["nom"] ?>" name="nom" id="nom">
+            </div>
+            <br>
+            <div class="marg">
+                <label class="utilisateur" for="poste1">Poste 1 :</label>
+                <input class="" size="57" type="text" placeholder="<?php echo $user["poste1"] ?>" name="poste1" id="poste1">
+            </div>
+            <br>
+            <div class="marg">
+                <label class="utilisateur" for="poste2">Poste 2 :</label>
+                <input class="" size="57" type="text" placeholder="<?php echo $user["poste2"] ?>" name="poste2" id="poste2">
+            </div>
+            <br>
+            <div class="marg">
+                <label class="utilisateur" for="numero">Numéro :</label>
+                <input class="" type="text" placeholder="<?php echo $user["numero"] ?>" name="numero" id="numero">
+                <label class="utilisateur" for="mail">Email :</label>
+                <input class="" type="text" placeholder="<?php echo $user["mail"] ?>" name="mail" id="mail">
+            </div>
+            <!-- Fin du formulaire des modifications -->
+            <br>
+            <div class="buttonGenerer">
+                <!-- Bouton pour enregistrer les modifications ou retourer à l'accueil -->
+                <button class="buttonGenerer" type="submit">Enregistrer les modifications</button>
+                <button class="buttonGenerer" href="/generateur_signature/index.html.php">Accueil</button>
+                <!-- Fin des Boutons enregistrer et accueil -->
+            </div>
+        </form>
 
-<h1 class="utilisateur">Formulaire de modification :</h1>
-<p class="poste">Le formulaire présent ici vous permet de modifier votre signature en conservant les informations déjà prédéfinies. <br>
-    Veuillez modifier les champs désirés ; ce qui n'a pas été modifié restera inchangé.</p>
-
-<hr>
-<!-- Vue de la signature ciblé à modifier -->
+        <h1 class="utilisateur">Formulaire de modification :</h1>
+        <p class="poste">Le formulaire présent ici vous permet de modifier votre signature en conservant les informations déjà prédéfinies. <br>
+            Veuillez modifier les champs désirés, ce qui n'a pas été modifié restera inchangé.</p>
+        <br>
+        <hr>
+        <!-- Vue de la signature ciblé à modifier -->
         <table>
             <tr>
                 <td>
@@ -74,12 +74,12 @@ foreach ($users as $user) {
                         <?php echo $user["poste2"] ?>
                     </div>
                     <span class="coordonnee"><?php echo $user["numero"] ?> | <?php echo $user["mail"] ?><br>
-                    www.enumiere.com</span>
-                        <!-- Fin information -->
+                        www.enumiere.com</span>
+                    <!-- Fin information -->
                 </td>
             </tr>
         </table>
-<!-- Fin de la vue de la signature ciblé -->
+        <!-- Fin de la vue de la signature ciblé -->
 
 <?php
     }
