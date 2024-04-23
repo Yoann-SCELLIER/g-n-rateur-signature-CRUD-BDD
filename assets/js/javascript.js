@@ -1,36 +1,46 @@
+// Sélection de l'élément bouton avec la classe 'js-copy'
 var btncopy = document.querySelector('.js-copy');
+
+// Vérification si le bouton a été trouvé
 if(btncopy) {
+    // Ajout d'un écouteur d'événements de clic sur le bouton
     btncopy.addEventListener('click', docopy);
 }
 
+// Fonction qui sera appelée lors du clic sur le bouton
 function docopy() {
-
-    // Cible de l'élément qui doit être copié
+    // Récupération de l'élément à copier à partir de son attribut 'data-target'
     var target = this.dataset.target;
     var fromElement = document.querySelector(target);
+    
+    // Vérification si l'élément à copier existe
     if(!fromElement) return;
 
-    // Sélection des caractères concernés
+    // Création d'une plage de sélection
     var range = document.createRange();
     var selection = window.getSelection();
     range.selectNode(fromElement);
+    
+    // Suppression de toutes les plages de sélection précédentes et ajout de la nouvelle plage
     selection.removeAllRanges();
     selection.addRange(range);
 
     try {
-        // Exécution de la commande de copie
+        // Tentative d'exécution de la commande de copie du texte sélectionné dans le presse-papiers
         var result = document.execCommand('copy');
+        
+        // Vérification si la copie a réussi
         if (result) {
-            // La copie a réussi
+            // Affichage d'une alerte indiquant que la copie a réussi
             alert('Copié !');
         }
     }
     catch(err) {
-        // Une erreur est surevnue lors de la tentative de copie
+        // Gestion des erreurs : Affichage d'une alerte avec le message d'erreur
         alert(err);
     }
 
-    // Fin de l'opération
+    // Nettoyage de la sélection
     selection = window.getSelection();
     if (typeof selection.removeRange === 'function') {
         selection.removeRange(range);

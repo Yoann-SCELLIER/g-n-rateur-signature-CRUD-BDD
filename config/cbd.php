@@ -15,7 +15,7 @@
 // CONNEXION BDD V2
 try {
     // Connexion à la base de données
-    $bdd = new PDO('mysql:host=localhost;dbname=generateur_signature', '', '');
+    $bdd = new PDO('mysql:host=localhost;dbname=generateur_signature', 'yoann', 'Simplon2023!');
     
     // Définir le mode d'erreur PDO sur exception
     $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

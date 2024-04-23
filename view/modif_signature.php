@@ -74,7 +74,7 @@ foreach ($users as $user) {
                 </td>
             </tr>
         </table>
-<!-- FIn de la vue de la signature ciblé -->
+<!-- Fin de la vue de la signature ciblé -->
 
 <?php
     }
