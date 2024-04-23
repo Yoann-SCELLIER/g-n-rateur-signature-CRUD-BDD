@@ -1,3 +1,4 @@
+<div>
 <!-- Formulaire pour une nouvelle signature -->
 <form class="formBorder" action="/generateur_signature/controller/ajout_signature.php" enctype="multipart/form-data" method="post">
     <div class="">
@@ -36,3 +37,10 @@
     </div>
 </form>
 <!-- Fin du formulaire pour les nouvelles signatures -->
+
+<h1 class="utilisateur">Formulaire de signature.</h1>
+<p class="poste">Ci-contre se trouve le formulaire permettant de générer la signature mail. <br>
+    Vous aurez la possibilité de copier, modifier ou supprimer la signature à l'aide des boutons qui seront visibles sous la signature. <br>
+    Une fois copiée, vous pourrez vous rendre dans les paramètres de votre boîte mail pour y coller la signature qui vous sera dédiée.</p>
+</div>
+<hr>

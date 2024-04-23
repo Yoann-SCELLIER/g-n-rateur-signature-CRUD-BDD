@@ -48,6 +48,11 @@ foreach ($users as $user) {
     </div>
 </form>
 
+<h1 class="utilisateur">Formulaire de modification :</h1>
+<p class="poste">Le formulaire présent ici vous permet de modifier votre signature en conservant les informations déjà prédéfinies. <br>
+    Veuillez modifier les champs désirés ; ce qui n'a pas été modifié restera inchangé.</p>
+
+<hr>
 <!-- Vue de la signature ciblé à modifier -->
         <table>
             <tr>
