@@ -4,7 +4,6 @@
         <div class="">
             <input type="hidden" name="imgAgence" value="/generateur_signature/assets/img/Énumière-logotype.svg">
 
-
             <div class="marg">
                 <label class="utilisateur" for="prenom">Prenom :</label>
                 <input class="" type="text" name="prenom" id="prenom">
@@ -24,9 +23,9 @@
             <br>
             <div class="marg">
                 <label class="utilisateur" for="numero">Numéro :</label>
-                <input class="" type="text" name="numero" id="numero">
+                <input class="" type="tel" name="numero" id="numero">
                 <label class="utilisateur" for="mail">Email :</label>
-                <input class="" type="text" name="mail" id="mail">
+                <input class="" type="email" name="mail" id="mail">
             </div>
             <br>
             <div class="buttonGenerer">
@@ -39,7 +38,7 @@
     <!-- Fin du formulaire pour les nouvelles signatures -->
 
     <h1 class="utilisateur">Formulaire de signature.</h1>
-    <p class="poste">Ci-contre se trouve le formulaire permettant de générer la signature mail. <br>
+    <p class="poste">Ci-dessus se trouve le formulaire permettant de générer la signature mail. <br>
         Vous aurez la possibilité de copier, modifier ou supprimer la signature à l'aide des boutons qui seront visibles sous la signature. <br>
         Une fois copiée, vous pourrez vous rendre dans les paramètres de votre boîte mail pour y coller la signature qui vous sera dédiée.</p>
 </div>

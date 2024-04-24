@@ -3,8 +3,12 @@
 require_once __DIR__ . '/config/cbd.php'; // Connexion base de donnée
 require_once __DIR__ . '/components/header.php'; // Header
 require_once __DIR__ . '/function/signature.fn.php'; // Fonction pour les signatures
-require_once __DIR__ . '/view/formulaire_signature.php'; // Formulaire de la signature
-require_once __DIR__ . '/view/view_signature.php'; // La vue de la signature sur la page index
+
+// Formulaire de la signature
+require_once __DIR__ . '/view/formulaire_signature.php'; 
+
+// La vue de la signature sur la page index
+require_once __DIR__ . '/view/view_signature.php'; 
 ?>
 
 <div>
